@@ -35,4 +35,4 @@ This project follows the **Feature-Sliced Design (FSD)** architectural methodolo
 * **Lazy Loading:** Implemented Route-based code splitting using `React.lazy` and `Suspense` to reduce the initial bundle size.
 * **Image Optimization:** Implemented lazy loading for images.
 
-https://github.com/DmitriyBihun
+https://github.com/DmitriyBihun/TravelBlog
