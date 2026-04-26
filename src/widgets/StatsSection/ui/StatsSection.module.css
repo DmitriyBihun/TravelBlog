@@ -1,0 +1,27 @@
+.stats {
+    padding: 3.75rem 0;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+@media (max-width: 47.9988rem) {
+    .stats {
+        padding: 2rem 0;
+    }
+
+    .statsGrid {
+        gap: .625rem;
+    }
+}

@@ -1,0 +1,71 @@
+.marquee {
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+    padding-block: 3rem;
+}
+
+.marqueeTrack {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: scroll 50s linear infinite;
+}
+
+.marqueeGroup {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    padding-right: 5rem;
+
+    line-height: 1.2;
+}
+
+.marqueeGroup span {
+    font-size: 7.5rem;
+    white-space: nowrap;
+}
+
+/* .marquee:hover .marqueeTrack {
+    animation-play-state: paused;
+} */
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .marquee {
+        display: flex;
+        padding: 1rem 0;
+        mask-image: linear-gradient(to right,
+                transparent 0%,
+                black 15%,
+                black 85%,
+                transparent 100%);
+    }
+
+    .marqueeTrack {
+        gap: 2rem;
+    }
+
+    .marqueeGroup {
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .marqueeGroup span {
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+}

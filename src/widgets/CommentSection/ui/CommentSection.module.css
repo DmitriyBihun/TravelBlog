@@ -1,0 +1,6 @@
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+}
